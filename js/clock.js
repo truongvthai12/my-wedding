@@ -5,7 +5,7 @@ $(document).ready(function() {
   let currentDate = new Date();
 
   // Target future date/24 hour time/Timezone
-  let targetDate = moment.tz("2024-03-24 00:00", "Asia/Ho_Chi_Minh");
+  let targetDate = moment.tz("2024-03-24 09:30", "Asia/Ho_Chi_Minh");
 
   // Calculate the difference in seconds between the future and current date
   let diff = targetDate / 1000 - currentDate.getTime() / 1000;
@@ -24,6 +24,7 @@ $(document).ready(function() {
     clock = $(".clock").FlipClock(diff, {
       clockFace: "DailyCounter",
       countdown: true,
+      language:'vi',
       callbacks: {
         stop: function() {
           console.log("Timer has ended!")
