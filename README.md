@@ -5,4 +5,4 @@ To set the countdown date see below section in `js/clock.js`
   let targetDate = moment.tz("2023-10-29 12:00", "Asia/Kolkata");
 ````
 
-![Example Image](images/RS2.jpg)
+![Example Image](images/RS3.jpg)
