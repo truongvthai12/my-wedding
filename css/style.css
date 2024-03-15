@@ -1816,5 +1816,19 @@ form label {
     border-radius: 7px
 }
 
+
+.see-more-btn {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  background: #FFA4BA;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 24px;
+  border-radius: 7px;
+}
+.fh5co-gallery-heading {
+  margin-bottom: 0.5em;
+}
 /*# sourceMappingURL=style.css.map */
 
