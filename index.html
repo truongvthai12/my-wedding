@@ -50,6 +50,8 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+	<link rel="stylesheet" href="css/nanogallery2.min.css" type="text/css">
+
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/timeline.css">
@@ -163,7 +165,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Lộ trình</h2>
+					<h2>Lộ trình dự kiến</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -172,26 +174,26 @@
 					<div class="timeline animate-box" style="background:rgba(255, 164, 186, 0.2)">
 						<div class="container-timeline left">
 						  <div class="content">
-							<h2>2017</h2>
-							<p>Lorem ipsum..</p>
+							<h2><b>8:30 ngày 24/03/2024</b></h2>
+							<p>Xe đón khách tại số 1 Lương Yên</p>
 						  </div>
 						</div>
 						<div class="container-timeline right">
 						  <div class="content">
-							<h2>2016</h2>
-							<p>Lorem ipsum..</p>
+							<h2><b>10:00 ngày 24/03/2024</b></h2>
+							<p>Xe đến địa điểm tổ chức cưới ở Thường Tín</p>
 						  </div>
 						</div>
 						<div class="container-timeline left">
 							<div class="content">
-							  <h2>2015</h2>
-							  <p>Lorem ipsum..</p>
+							  <h2><b>10:30 ngày 24/03/2024</b></h2>
+							  <p>Khách dùng bữa tiệc cưới</p>
 							</div>
 						</div>
 						<div class="container-timeline right">
 							<div class="content">
-							  <h2>2014</h2>
-							  <p>Lorem ipsum...</p>
+							  <h2><b>11:30 ngày 24/03/2024</b></h2>
+							  <p>Khách lên xe trở về Hà Nội</p>
 							</div>
 						  </div>
 					</div>
@@ -212,28 +214,32 @@
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-12">
 					<!-- a block container is required -->
-					<div id="fh5co-gallery-list" class="row">
-						<div class="animate-box col-sm-4"> 
-							<div class="image-gallery-box">
-								<img src="images/RS1.jpg" />
-							</div>					
-						</div>
-						<div class="animate-box col-sm-4 "> 
-							<div class="image-gallery-box">
-								<img src="images/RS2.jpg" />
-							</div>
-						</div>
-						<div class="animate-box col-sm-4"> 
-							<div class="image-gallery-box">
-								<img src="images/RS3.jpg" />
-							</div>	
-						</div>
-
-					</div>		
+					<div id="nanogallery2"
+                            data-nanogallery2 = '{
+                                "thumbnailWidth":   "auto",
+                                "thumbnailHeight":  300,
+                                "thumbnailBorderHorizontal": 0,
+                                "thumbnailL1BorderHorizontal": 0,
+                                "thumbnailBorderVertical": 0,
+                                "thumbnailL1BorderVertical": 0,
+                                "thumbnailGutterWidth": 12,
+                                "thumbnailL1GutterWidth": 12,
+                                "thumbnailGutterHeight": 12,
+                                "thumbnailL1GutterHeight": 12
+                                }' >
+                                
+                            <!-- gallery content -->
+							
+                            <a href = "images/00.jpg"  data-ngThumb = "images/00.jpg" ></a>
+							<a href = "images/23.jpg"  data-ngThumb = "images/23.jpg" ></a>
+                            <a href = "images/24.jpg"   data-ngThumb = "images/24.jpg" ></a>
+							<a href = "images/JUL03053.jpg" data-ngThumb = "images/JUL03053.jpg" ></a>
+						
+					</div>	
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 text-center animate-box">
+				<div class="col-12 text-center animate-box" style="margin-top: 3em;">
 					<a class="see-more-btn text-center" href="gallery.html">Xem thêm</a>
 				</div>
 			</div>
@@ -295,6 +301,8 @@
 	<script src="js/simplyCountdown.js"></script>
 
 	<script src="js/viewer.min.js"></script>
+
+	<script src="js/nanogallery2.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script>
@@ -303,7 +311,7 @@
 
 // View a list of images.
 // Note: All images within the container will be found by calling `element.querySelectorAll('img')`.
-const gallery = new Viewer(document.getElementById('fh5co-gallery-list'));
+// const gallery = new Viewer(document.getElementById('fh5co-gallery-list'));
 // Then, show one image by click it, or call `gallery.show()`.
 // const gallery = new Viewer(document.getElementById('fh5co-gallery-list'));
 		</script>
